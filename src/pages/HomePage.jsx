@@ -103,7 +103,7 @@ const HomePage = () => {
             Elazığ Escort
           </h1>
           <p className="text-gray-400 max-w-2xl mx-auto mb-8 text-lg">
-            Admin onaylı İlanlar Görüşülüp Onaylanan ilandır. Sitemizde dolandırıcılara Yer yok.
+            Admin Onaylı İlanlar Görüşülüp Onaylanan ilanlardir. Sitemizde dolandırıcıya Yer Yok
           </p>
           <CTAButton />
         </div>
