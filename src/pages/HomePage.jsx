@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { MessageCircle } from 'lucide-react';
@@ -53,28 +53,28 @@ const HomePage = () => {
       className="w-full max-w-md mx-auto bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-200 flex items-center justify-center gap-2"
     >
       <MessageCircle className="w-6 h-6" />
-      İlan vermek için tıklayınız
+      Ä°lan vermek iÃ§in tÄ±klayÄ±nÄ±z
     </motion.button>
   );
 
-  const pageTitle = "Elazığ Kaliteli Escort Elazığ'daki Gerçek Escortlarla Burda Tanışabilir Görüşüp Unutulmayacak Bir Gece Yaşayabilirsiniz.";
-  const pageDescription = "Elazığ Kaliteli Escort Elazığ'daki Gerçek Escortlarla Burda Tanışabilir Görüşüp Unutulmayacak Bir Gece Yaşayabilirsiniz.";
+  const pageTitle = "ElazÄ±ÄŸ Escort, ElazÄ±ÄŸ Bayan Escort, ElazÄ±ÄŸ GerÃ§ek Escort, ElazÄ±ÄŸ Escort Ä°lan, ElazÄ±ÄŸ GenÃ§ Escort, ElazÄ±ÄŸ Ãœniversiteli Escort";
+  const pageDescription = "ElazÄ±ÄŸ Escort, ElazÄ±ÄŸ Bayan Escort, ElazÄ±ÄŸ GerÃ§ek Escort, ElazÄ±ÄŸ Escort Ä°lan, ElazÄ±ÄŸ GenÃ§ Escort, ElazÄ±ÄŸ Ãœniversiteli Escort";
   const canonicalUrl = getCanonicalUrl('/');
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "Elazığ Escort Platformu",
+    "name": "ElazÄ±ÄŸ Escort Platformu",
     "description": pageDescription,
     "url": canonicalUrl,
     "areaServed": [
       { "@type": "City", "name": "Merkez" },
-      { "@type": "City", "name": "Kovancılar" },
-      { "@type": "City", "name": "Karakoçan" },
+      { "@type": "City", "name": "KovancÄ±lar" },
+      { "@type": "City", "name": "KarakoÃ§an" },
       { "@type": "City", "name": "Baskil" },
-      { "@type": "City", "name": "Ağın" },
-      { "@type": "City", "name": "Palü" },
-      { "@type": "City", "name": "Elazığ" }
+      { "@type": "City", "name": "AÄŸÄ±n" },
+      { "@type": "City", "name": "Palu" },
+      { "@type": "City", "name": "ElazÄ±ÄŸ" }
     ]
   };
 
@@ -83,7 +83,7 @@ const HomePage = () => {
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
-        <meta name="keywords" content="Elazığ escort, Elazığ kaliteli escort, gerçek escort, Elazığ escort bayan, escort Elazığ" />
+        <meta name="keywords" content="ElazÄ±ÄŸ escort, ElazÄ±ÄŸ bayan escort, ElazÄ±ÄŸ gerÃ§ek escort, ElazÄ±ÄŸ escort ilan, ElazÄ±ÄŸ genÃ§ escort, ElazÄ±ÄŸ Ã¼niversiteli escort" />
         <link rel="canonical" href={canonicalUrl} />
         
         <meta property="og:title" content={pageTitle} />
@@ -100,16 +100,16 @@ const HomePage = () => {
         {/* Hero Section */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-rose-500 mb-6 tracking-tight">
-            Elazığ Escort
+            ElazÄ±ÄŸ Escort
           </h1>
           <p className="text-gray-400 max-w-2xl mx-auto mb-8 text-lg">
-            Admin Onaylı İlanlar Görüşülüp Onaylanan ilanlardir. Sitemizde dolandırıcıya Yer Yok
+            Admin OnaylÄ± Ä°lanlar GÃ¶rÃ¼ÅŸÃ¼lÃ¼p Onaylanan ilanlardÄ±r. Sitemizde dolandÄ±rÄ±cÄ±ya Yer Yok
           </p>
           <CTAButton />
         </div>
 
         {isLoading ? (
-          <div className="text-center text-gray-400 py-12">Yükleniyor...</div>
+          <div className="text-center text-gray-400 py-12">YÃ¼kleniyor...</div>
         ) : (
           <>
             {/* Admin Approved Section */}
@@ -119,7 +119,7 @@ const HomePage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 className="text-3xl font-bold text-white border-l-4 border-pink-500 pl-4 mb-8"
               >
-                Admin Onaylı <span className="text-pink-500">Escortlar</span>
+                Admin OnaylÄ± <span className="text-pink-500">Escortlar</span>
               </motion.h2>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-6">
@@ -137,7 +137,7 @@ const HomePage = () => {
 
               {adminApprovedListings.length === 0 && (
                 <p className="text-gray-400 text-center py-8">
-                  Henüz onaylanmış ilan bulunmamaktadır.
+                  HenÃ¼z onaylanmÄ±ÅŸ ilan bulunmamaktadÄ±r.
                 </p>
               )}
             </section>
@@ -167,7 +167,7 @@ const HomePage = () => {
 
               {normalListings.length === 0 && (
                 <p className="text-gray-400 text-center py-8">
-                  Henüz normal ilan bulunmamaktadır.
+                  HenÃ¼z normal ilan bulunmamaktadÄ±r.
                 </p>
               )}
 
