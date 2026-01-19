@@ -246,7 +246,10 @@ const ListingDetail = () => {
                 Telefon Ara
               </Button>
               <Button
-                onClick={() => window.open(`https://wa.me/${listing.phone_number}`, '_blank')}
+                onClick={() => {
+                  const message = encodeURIComponent('Selam Elazığhub sitesinde ilanını gördüm seninle görüşmek istiyorum şartların nelerdir');
+                  window.open(`https://wa.me/${listing.phone_number}?text=${message}`, '_blank');
+                }}
                 className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-6 text-lg"
               >
                 <MessageCircle className="w-5 h-5 mr-2" />
